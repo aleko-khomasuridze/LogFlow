@@ -1,5 +1,4 @@
 from .log import Log
-from .enums.logcolors import LogColors
-from ..levels.loglevel import LogLevel
+from .enums import LogColors, LogLevel, LogType
 
-__all__ = ['Log', 'LogLevel', 'LogColors']
+__all__ = ["Log", "LogLevel", "LogColors", "LogType"]

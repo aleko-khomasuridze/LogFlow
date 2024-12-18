@@ -1,3 +1,5 @@
-from .logcolors import LogColors
+from .logcolors import LogColor
+from .loglevel import LogLevel
+from .logtype import LogTypes, LogType
 
-__all__ = ['LogColors']
+__all__ = ["LogColor", "LogLevel", "LogTypes", "LogType"]

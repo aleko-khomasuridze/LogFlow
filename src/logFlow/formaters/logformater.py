@@ -20,3 +20,5 @@ class LogFormater:
             {log.get_message()}'
         )
         
+logFormater: LogFormater = LogFormater(DateTimeFormat.EU)
+        

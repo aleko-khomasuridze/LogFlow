@@ -2,7 +2,7 @@ from enums import LogColor, LogLevel, LogType
 from datetime import datetime
 
 class Log:
-    def __init__(self, type: LogType, message: str, date_time: datetime):
+    def __init__(self, type: LogType, message: str, date_time: datetime = datetime.now()):
         self.__color: LogColor = type.log_color
         self.__level: LogLevel = type.log_level
         self.__message: str = message

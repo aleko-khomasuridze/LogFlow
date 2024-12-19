@@ -1,12 +1,15 @@
 from models import Log
 from handlers import Handler
-from datetime import datetime, date
+from datetime import datetime
+from handlers.impl import ConsoleHandler
+from models import LogTypes
 
 class Logger:
     def __init__(self):
-        self.__handlers = []
-        self.__datetime = date.now()
-        
+        self.__handlers = [
+            ConsoleHandler()
+        ]
+        # self.__datetime = datetime.now()
         
     def add_handler(self, handler: Handler) -> None:
         self.__handlers.append(handler)
@@ -23,3 +26,6 @@ class Logger:
             handler.handle(log)
             
     
+logger: Logger = Logger()
+
+logger.log(Log(LogTypes.ERROR, 'jkj fdasjfj fjla jlaf', datetime.now()))

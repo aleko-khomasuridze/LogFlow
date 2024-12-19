@@ -17,7 +17,7 @@ class Log:
     def get_message(self) -> str:
         return self.__message
     
-    def get_date_tiem(self) -> datetime:
+    def get_date_time(self) -> datetime:
         return self.__date_time
 
     def set_date_time(self, date_time: datetime) -> None:

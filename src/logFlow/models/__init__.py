@@ -1,4 +1,3 @@
-from ..models.log import Log
-from enums import LogColors, LogLevel, LogType, LogTypes
+from logFlow.models.enums import LogColors, LogLevel, LogType, LogTypes
 
-__all__ = ["Log", "LogLevel", "LogColors", "LogType", "LogTypes"]
+__all__ = ["LogLevel", "LogColors", "LogType", "LogTypes"]

@@ -1,6 +1,10 @@
-from logFlow import Logger, LogTypes, Log
-from datetime import datetime
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
-logger: Logger = Logger()
+from logFlow.logger import Logger
+from logFlow.models.log import Log
+from logFlow.models.enums.logtype import LogTypes
 
-logger.log(Log(LogTypes.ERROR, 'jkj fdasjfj fjla jlaf', datetime.now()))
+logger = Logger()
+logger.log(Log(LogTypes.ERROR, 'asafas'))

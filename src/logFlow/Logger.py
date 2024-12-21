@@ -25,7 +25,3 @@ class Logger:
         for handler in self.__handlers:
             handler.handle(log)
             
-    
-logger: Logger = Logger()
-
-logger.log(Log(LogTypes.ERROR, 'jkj fdasjfj fjla jlaf', datetime.now()))

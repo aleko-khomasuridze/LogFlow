@@ -2,7 +2,6 @@ from models import Log
 from handlers import Handler
 from datetime import datetime
 from handlers.impl import ConsoleHandler
-from models import LogTypes
 
 class Logger:
     def __init__(self):

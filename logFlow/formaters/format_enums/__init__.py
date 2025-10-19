@@ -1,3 +1,3 @@
 from .dateTimeFormats import DateTimeFormat
 
-__all__ = ["DateTimeFormater"]
+__all__ = ["DateTimeFormat"]

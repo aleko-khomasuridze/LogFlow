@@ -1,22 +1,25 @@
-from . import LogColors
-from . import LogLevel
+from dataclasses import dataclass
 
+from .logcolors import LogColors
+from .loglevel import LogLevel
+
+
+@dataclass(frozen=True)
 class LogType:
-    def __init__(self, log_level: LogLevel, log_color: LogColors):
-        self._log_level = log_level
-        self._log_color = log_color
+    """Mapping between a :class:`LogLevel` and the colour it should be displayed with."""
 
-    @property
-    def log_color(self) -> LogColors:
-        return self._log_color
+    log_level: LogLevel
+    log_color: LogColors
 
-    @property
-    def log_level(self) -> LogLevel:
-        return self._log_level
 
 class LogTypes:
+    """Predefined collection of useful log types."""
+
     ERROR = LogType(LogLevel.ERROR, LogColors.ERROR)
     WARNING = LogType(LogLevel.WARNING, LogColors.WARNING)
     INFO = LogType(LogLevel.INFO, LogColors.INFO)
     FATAL = LogType(LogLevel.FATAL, LogColors.FATAL)
     SUCCESS = LogType(LogLevel.SUCCESS, LogColors.SUCCESS)
+
+
+__all__ = ["LogType", "LogTypes"]

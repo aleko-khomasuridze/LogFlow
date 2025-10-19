@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Iterable, List, Sequence
 
-from logFlow.handlers import ConsoleHandler, Handler
-from logFlow.models import Log, LogType
+from src.handlers import ConsoleHandler, Handler
+from src.models import Log, LogType
 
 
 class Logger:

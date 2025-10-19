@@ -1,7 +1,7 @@
 from io import StringIO
 
-from logFlow.handlers import ConsoleHandler, CustomHandler, FileHandler
-from logFlow.models import Log, LogTypes
+from src.handlers import ConsoleHandler, CustomHandler, FileHandler
+from src.models import Log, LogTypes
 
 
 def test_console_handler_writes_to_stream() -> None:

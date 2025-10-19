@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from logFlow.models import Log, LogColors, LogLevel, LogTypes
+from src.models import Log, LogColors, LogLevel, LogTypes
 
 
 def test_log_exposes_expected_properties() -> None:

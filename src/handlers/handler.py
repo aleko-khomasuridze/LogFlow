@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
-from logFlow.models import Log
+from src.models import Log
 
 
 class Handler(ABC):

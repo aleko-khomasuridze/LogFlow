@@ -1,5 +1,5 @@
 import platform
-from src.formatters import DateTimeFormat
+from logflow.formatters import DateTimeFormat
 
 os_name: str = platform.system()
 

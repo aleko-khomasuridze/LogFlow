@@ -1,7 +1,7 @@
-from src.logger import Logger
-from src.formatters import DateTimeFormat, JsonFormatter, LogFormatter, logFormater
-from src.handlers import ConsoleHandler, CustomHandler, FileHandler, Handler
-from src.models import Log, LogColors, LogLevel, LogType, LogTypes
+from logflow.logger import Logger
+from logflow.formatters import DateTimeFormat, JsonFormatter, LogFormatter, logFormater
+from logflow.handlers import ConsoleHandler, CustomHandler, FileHandler, Handler
+from logflow.models import Log, LogColors, LogLevel, LogType, LogTypes
 
 __all__ = [
     "Logger",

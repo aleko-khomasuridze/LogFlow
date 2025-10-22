@@ -1,8 +1,8 @@
 from datetime import datetime
 import json
 
-from src.formatters import DateTimeFormat, JsonFormatter, LogFormatter, logFormater
-from src.models import Log, LogColors, LogTypes
+from logflow.formatters import DateTimeFormat, JsonFormatter, LogFormatter, logFormater
+from logflow.models import Log, LogColors, LogTypes
 
 
 def test_log_formatter_is_singleton() -> None:

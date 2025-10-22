@@ -1,7 +1,7 @@
-from src.models import Log
-from src.logger import Logger
-from src.models.enums.log_type import LogTypes
-from src.formatters import *
+from logflow.models import Log
+from logflow.logger import Logger
+from logflow.models.enums.log_type import LogTypes
+from logflow.formatters import *
 
 dictFormatter: DictFormater = DictFormater()
 formattedLog = dictFormatter.format(Log(LogTypes.INFO, "This is an info log message."))

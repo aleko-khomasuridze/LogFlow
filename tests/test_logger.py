@@ -1,6 +1,6 @@
-from src.handlers import Handler
-from src.logger import Logger
-from src.models import Log, LogTypes
+from logflow.handlers import Handler
+from logflow.logger import Logger
+from logflow.models import Log, LogTypes
 
 
 class DummyHandler(Handler):

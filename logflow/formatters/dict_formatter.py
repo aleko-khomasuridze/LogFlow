@@ -1,6 +1,6 @@
-from src.formatters import DateTimeFormat
-from src.config import LogConfig
-from src.models import Log
+from logflow.formatters import DateTimeFormat
+from logflow.config import LogConfig
+from logflow.models import Log
 
 class DictFormater:
     def __init__(self, date_time_format: DateTimeFormat = LogConfig.LOG_DATE_TIME_FORMAT):

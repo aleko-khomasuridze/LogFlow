@@ -1,4 +1,4 @@
-from src.models import LogColors, LogLevel, LogTypes
+from logflow.models import LogColors, LogLevel, LogTypes
 
 
 def test_log_levels_are_strings() -> None:

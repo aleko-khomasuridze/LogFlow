@@ -1,5 +1,5 @@
-from src.handlers import ConsoleHandler
-from src.logger import Logger
+from logflow.handlers import ConsoleHandler
+from logflow.logger import Logger
 
 
 def test_logger_clear_handlers_removes_all() -> None:

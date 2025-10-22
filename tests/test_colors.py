@@ -1,6 +1,6 @@
 from colorama import Fore
 
-from src.models import LogColors
+from logflow.models import LogColors
 
 
 def test_log_colors_match_colorama_palette() -> None:

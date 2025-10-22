@@ -6,6 +6,7 @@ class LogLevel(str, Enum):
 
     SUCCESS = "Success"
     INFO = "Info"
+    DEBUG = "Debug"
     WARNING = "Warning"
     ERROR = "Error"
     FATAL = "Fatal"

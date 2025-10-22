@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from typing import Any, Dict, Optional
 
-from .format_enums import DateTimeFormat
+from .enums import DateTimeFormat
 from ..models import Log
 
 

@@ -17,6 +17,7 @@ class LogTypes:
 
     ERROR = LogType(LogLevel.ERROR, LogColors.ERROR)
     WARNING = LogType(LogLevel.WARNING, LogColors.WARNING)
+    DEBUG = LogType(LogLevel.DEBUG, LogColors.DEBUG)
     INFO = LogType(LogLevel.INFO, LogColors.INFO)
     FATAL = LogType(LogLevel.FATAL, LogColors.FATAL)
     SUCCESS = LogType(LogLevel.SUCCESS, LogColors.SUCCESS)

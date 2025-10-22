@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Callable, Protocol, Union
 
 from ..handler import Handler
-from ...formaters import logFormater
+from ...formatters import logFormater
 from ...models import Log
 
 

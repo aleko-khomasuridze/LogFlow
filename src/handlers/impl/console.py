@@ -4,7 +4,7 @@ import sys
 from typing import Callable, Protocol, TextIO, Union
 
 from ..handler import Handler
-from ...formaters import logFormater
+from ...formatters import logFormater
 from ...models import Log
 
 

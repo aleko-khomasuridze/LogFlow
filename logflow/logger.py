@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Iterable, List, Sequence
 
-from logflow.handlers import ConsoleHandler, Handler
+from logflow.handlers import ConsoleHandler, Handler, FileHandler
 from logflow.models import Log, LogType
 
 
@@ -15,6 +15,7 @@ class Logger:
             self.add_handlers(handlers)
         else:
             self.__handlers.append(ConsoleHandler())
+            self.__handlers.append(FileHandler())
 
     def add_handler(self, handler: Handler) -> None:
         if handler not in self.__handlers:

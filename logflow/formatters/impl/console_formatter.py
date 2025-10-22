@@ -1,7 +1,3 @@
-from __future__ import annotations
-
-from typing import Optional
-
 from ..formatter import Formatter
 from ..enums import DateTimeFormat
 from ...models import Log, LogColors

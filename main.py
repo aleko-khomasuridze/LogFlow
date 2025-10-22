@@ -1,11 +1,15 @@
-from src.models.log import Log
+from src.models import Log
 from src.logger import Logger
 from src.models.enums.log_type import LogTypes
-from src.formaters import JsonFormatter
+from src.formatters import *
+
+dictFormatter: DictFormater = DictFormater()
+formattedLog = dictFormatter.format(Log(LogTypes.INFO, "This is an info log message."))
+print(formattedLog["message"])
 
 jsonFormatter: JsonFormatter = JsonFormatter(indent=4)
 jsonLog = jsonFormatter.format(Log(LogTypes.ERROR, "This is an error log message."))
-print(jsonLog["message"])
+print(jsonLog)
 
 logger = Logger()
 logger.log(Log(LogTypes.SUCCESS, 'test log message'))

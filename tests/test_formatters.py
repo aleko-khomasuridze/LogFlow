@@ -1,7 +1,7 @@
 from datetime import datetime
 import json
 
-from src.formaters import DateTimeFormat, JsonFormatter, LogFormatter, logFormater
+from src.formatters import DateTimeFormat, JsonFormatter, LogFormatter, logFormater
 from src.models import Log, LogColors, LogTypes
 
 

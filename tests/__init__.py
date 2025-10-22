@@ -1,5 +1,5 @@
 from src.logger import Logger
-from src.formaters import DateTimeFormat, JsonFormatter, LogFormatter, logFormater
+from src.formatters import DateTimeFormat, JsonFormatter, LogFormatter, logFormater
 from src.handlers import ConsoleHandler, CustomHandler, FileHandler, Handler
 from src.models import Log, LogColors, LogLevel, LogType, LogTypes
 

@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Callable, Optional, Protocol, Union
 
 from ..handler import Handler
-from ...formaters import logFormater
+from ...formatters import logFormater
 from ...models import Log
 
 

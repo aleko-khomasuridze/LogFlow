@@ -3,19 +3,18 @@ from __future__ import annotations
 import json
 from typing import Any, Dict, Optional
 
-from .enums import DateTimeFormat
-from ..models import Log
+from ..enums import DateTimeFormat
+from ..formatter import Formatter
+from ...models import Log
+from ...config import LogConfig
 
 
-class JsonFormatter:
-    """Serialises logs to JSON strings."""
-
+class JsonFormatter(Formatter):
     def __init__(
         self,
-        *,
-        date_time_format: DateTimeFormat = DateTimeFormat.ISO,
-        indent: Optional[int] = None,
-    ) -> None:
+        date_time_format: DateTimeFormat = LogConfig.LOG_DATE_TIME_FORMAT,
+        indent: Optional[int] = None
+    ):
         self._date_time_format = date_time_format
         self._indent = indent
 
@@ -28,5 +27,3 @@ class JsonFormatter:
 
         return json.dumps(payload, indent=self._indent)
 
-
-__all__ = ["JsonFormatter"]

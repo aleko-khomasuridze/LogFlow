@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Callable, Optional, Protocol, Union
 
 from ..handler import Handler
-from ...formatters import logFormater
+from ...formatters import ConsoleFormatter
 from ...models import Log
 
 
@@ -41,5 +41,3 @@ class FileHandler(Handler):
         with self._path.open(self._mode, encoding=self._encoding) as file:
             file.write(f"{message}\n")
 
-
-__all__ = ["FileHandler"]

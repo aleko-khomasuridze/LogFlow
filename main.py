@@ -1,9 +1,9 @@
 from logflow.models import Log
 from logflow.logger import Logger
 from logflow.models.enums.log_type import LogTypes
-from logflow.formatters import *
+from logflow.formatters.impl import *
 
-dictFormatter: DictFormater = DictFormater()
+dictFormatter: DictFormatter = DictFormatter()
 formattedLog = dictFormatter.format(Log(LogTypes.INFO, "This is an info log message."))
 print(formattedLog["message"])
 

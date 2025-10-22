@@ -22,5 +22,3 @@ class LogTypes:
     FATAL = LogType(LogLevel.FATAL, LogColors.FATAL)
     SUCCESS = LogType(LogLevel.SUCCESS, LogColors.SUCCESS)
 
-
-__all__ = ["LogType", "LogTypes"]

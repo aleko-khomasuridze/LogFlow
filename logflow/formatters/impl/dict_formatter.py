@@ -1,8 +1,9 @@
 from logflow.formatters import DateTimeFormat
+from ..formatter import Formatter
 from logflow.config import LogConfig
 from logflow.models import Log
 
-class DictFormater:
+class DictFormatter(Formatter):
     def __init__(self, date_time_format: DateTimeFormat = LogConfig.LOG_DATE_TIME_FORMAT):
         self.__date_time_format = date_time_format
 

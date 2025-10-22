@@ -2,34 +2,22 @@ from __future__ import annotations
 
 from typing import Optional
 
-from .enums import DateTimeFormat
-from ..models import Log, LogColors
+from ..formatter import Formatter
+from ..enums import DateTimeFormat
+from ...models import Log, LogColors
+from ...config import LogConfig
 
 
-class LogFormatter:
-    """Pretty printer used by the built-in handlers."""
-
-    _instance: Optional["LogFormatter"] = None
-
-    def __new__(cls, *args, **kwargs):
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-            cls._instance.__initialized = False
-        return cls._instance
-
-    def __init__(self, date_time_format: DateTimeFormat = DateTimeFormat.FULL):
-        if getattr(self, "__initialized", False):
-            return
-
+class ConsoleFormatter(Formatter):
+    def __init__(self, date_time_format: DateTimeFormat = LogConfig.LOG_DATE_TIME_FORMAT):
         self.__date_time_format = date_time_format
-        self.__initialized = True
 
     def set_date_time_format(self, date_time_format: DateTimeFormat) -> None:
         self.__date_time_format = date_time_format
 
     def get_date_time_format(self) -> DateTimeFormat:
         return self.__date_time_format
-
+    
     def format(self, log: Log) -> str:
         color = log.get_color().value if isinstance(log.get_color(), LogColors) else str(log.get_color())
         reset = LogColors.RESET.value
@@ -38,12 +26,3 @@ class LogFormatter:
         message = log.get_message()
         return f"{color}[{level}]-[{date_time}]{reset}: {message}"
 
-
-# Backwards compatibility with the previous public name
-LogFormater = LogFormatter
-
-
-logFormater: LogFormatter = LogFormatter(DateTimeFormat.EU)
-
-
-__all__ = ["LogFormatter", "LogFormater", "logFormater"]

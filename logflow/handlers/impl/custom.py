@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Callable, Protocol, Union
 
 from ..handler import Handler
-from ...formatters import logFormater
+from ...formatters import ConsoleFormatter
 from ...models import Log
 
 
@@ -34,5 +34,3 @@ class CustomHandler(Handler):
 
         self._callback(message, log)
 
-
-__all__ = ["CustomHandler"]

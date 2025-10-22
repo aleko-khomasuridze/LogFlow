@@ -14,5 +14,3 @@ class LogColors(str, Enum):
     FATAL = Fore.LIGHTMAGENTA_EX
     RESET = Fore.RESET
 
-
-__all__ = ["LogColors"]

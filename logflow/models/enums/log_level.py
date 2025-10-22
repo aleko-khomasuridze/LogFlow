@@ -11,5 +11,3 @@ class LogLevel(str, Enum):
     ERROR = "Error"
     FATAL = "Fatal"
 
-
-__all__ = ["LogLevel"]

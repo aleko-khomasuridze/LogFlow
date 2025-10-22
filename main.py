@@ -1,6 +1,6 @@
 from src.models.log import Log
 from src.logger import Logger
-from src.models.enums.logtype import LogTypes
+from src.models.enums.log_type import LogTypes
 from src.formaters import JsonFormatter
 
 jsonFormatter: JsonFormatter = JsonFormatter(indent=4)

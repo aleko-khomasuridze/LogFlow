@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
-from .logcolors import LogColors
-from .loglevel import LogLevel
+from .log_colors import LogColors
+from .log_level import LogLevel
 
 
 @dataclass(frozen=True)

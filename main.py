@@ -1,20 +1,13 @@
-from logflow.models import Log
-from logflow.logger import Logger
-from logflow.models.enums.log_type import LogTypes
-from logflow.formatters.impl import *
+# from logflow.logger import Logger
+# from logflow.models import LogTypes, Log
+# from logflow.config import LogConfig
+from logflow import *
 
-dictFormatter: DictFormatter = DictFormatter()
-formattedLog = dictFormatter.format(Log(LogTypes.INFO, "This is an info log message."))
-print(formattedLog["message"])
+LogConfig.LOG_DATE_TIME_FORMAT
 
-jsonFormatter: JsonFormatter = JsonFormatter(indent=4)
-jsonLog = jsonFormatter.format(Log(LogTypes.ERROR, "This is an error log message."))
-print(jsonLog)
-
-logger = Logger()
-logger.log(Log(LogTypes.SUCCESS, 'test log message'))
-logger.log(Log(LogTypes.INFO, 'test log message'))
-logger.log(Log(LogTypes.DEBUG, 'test log message'))
-logger.log(Log(LogTypes.WARNING, 'test log message'))
-logger.log(Log(LogTypes.ERROR, 'test log message'))
-logger.log(Log(LogTypes.FATAL, 'test log message'))
+def main() -> None:
+    logger = Logger()
+    logger.log(Log(LogTypes.DEBUG, "LogFlow is running smoothly!"))
+    
+if __name__ == "__main__":
+    main()

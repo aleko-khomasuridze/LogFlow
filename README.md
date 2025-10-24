@@ -63,7 +63,7 @@ if __name__ == '__main__':
 ##### Output
 
 ```bash
-[Debug]-[YYYY-MM-DDTHH:mm:SS]: some test message
+[Debug]-[2025-10-24T10:22:43]: some test message
 ```
 Sure — here’s the same section rewritten cleanly and professionally, without emojis:
 
@@ -157,6 +157,8 @@ This makes it easy to adjust log output for localization, system integration, or
 
 
 ### Custom handler implementation and integration
+
+
 
 ### 
 

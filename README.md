@@ -104,7 +104,8 @@ from logflow import *
 logger: Logger = Logger()
 
 def main() -> None:
-    logger.log(Log(LogType.DEBUG), 'some test message')
+    logger.log(Log(LogTypes.DEBUG, 'some test message'))
+    
 
 if __name__ == '__main__':
     main()

@@ -113,9 +113,6 @@ if __name__ == '__main__':
 ```bash
 [Debug]-[2025-10-24T10:22:43]: some test message
 ```
-Sure — here’s the same section rewritten cleanly and professionally, without emojis:
-
----
 
 ## Logger Configuration
 
@@ -313,10 +310,6 @@ class LogConfig:
 ```
 
 > **Note** Logflow allowes you to manage config in runtime
-
-Here’s a professional and consistent closing section you can append at the end of your LogFlow documentation — it includes **author info**, **GitHub links**, and an **open invitation for contributions**, styled to match the rest of your Markdown file:
-
----
 
 ## Author & Contributions
 

@@ -8,5 +8,6 @@ _filepath = os_name.lower() == 'windows' and 'C:\\Logs\\app.log' or '/var/log/ap
 class LogConfig:
     LOG_TO_CONSOLE = True
     LOG_TO_FILE = True
+    LOG_TO_CONSOLE = True
     LOG_FILE_PATH = _filepath
     LOG_DATE_TIME_FORMAT = DateTimeFormat.ISO 

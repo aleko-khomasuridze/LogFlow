@@ -6,6 +6,8 @@
 
 A simple yet elegant logging library for your `python` apps.
 
+![Demo Logs](/assets/logs_demo.png)
+
 ## Table of Contents
 
 1. [Overview](#overview)

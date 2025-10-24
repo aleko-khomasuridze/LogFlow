@@ -1,7 +1,7 @@
 # from logflow.logger import Logger
 # from logflow.models import LogTypes, Log
 # from logflow.config import LogConfig
-from logflow import *
+from logflow import Logger, LogConfig, LogTypes, Log
 
 LogConfig.LOG_DATE_TIME_FORMAT
 

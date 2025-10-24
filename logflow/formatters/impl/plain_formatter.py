@@ -1,7 +1,7 @@
-from formatter import Formatter
-from logflow.config import LogConfig
-from logflow.models import Log
-from logflow.formatters import DateTimeFormat
+from ..enums import DateTimeFormat
+from ..formatter import Formatter
+from ...models import Log
+from ...config import LogConfig
 
 class PlainFormatter(Formatter):
     def __init__(self):

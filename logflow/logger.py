@@ -4,6 +4,7 @@ from typing import Iterable, List, Sequence
 
 from logflow.handlers import ConsoleHandler, Handler, FileHandler
 from logflow.models import Log, LogType
+from logflow.config import LogConfig
 
 
 class Logger:
@@ -14,8 +15,10 @@ class Logger:
         if handlers:
             self.add_handlers(handlers)
         else:
-            self.__handlers.append(ConsoleHandler())
-            self.__handlers.append(FileHandler())
+            if LogConfig.CONSOLE_LOGGING_ENABLED:
+                self.__handlers.append(ConsoleHandler())
+            if LogConfig.FILE_LOGGING_ENABLED:
+                self.__handlers.append(FileHandler())
 
     def add_handler(self, handler: Handler) -> None:
         if handler not in self.__handlers:

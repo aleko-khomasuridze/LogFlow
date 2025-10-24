@@ -317,6 +317,7 @@ class LogConfig:
 
 **Author:** [Aleko Khomasuridze](https://github.com/aleko-khomasuridze)
 **Project Repository:** [LogFlow on GitHub](https://github.com/aleko-khomasuridze/LogFlow)
+**PyPi Repository:** [LogFlow on PyPi](https://pypi.org/project/logflow-python/)
 
 LogFlow is an open-source project built to provide a clean, modular, and extensible logging solution for Python developers.
 Contributions of all kinds — from bug fixes and feature suggestions to documentation improvements — are welcome and highly appreciated.

@@ -34,6 +34,8 @@ A simple yet elegant logging library for your `python` apps.
    * [Example Output](#example-output-1)
    * [Explanation](#explanation)
    * [Summary](#summary-1)
+7. [Logflow Configuration](#logflow-configuration)
+8. [Author & Contributions](#author--contributions)
 
 ## Overview
 
@@ -298,5 +300,44 @@ Defines how the log message should be processed or delivered.
 > **Tip**: 
 By implementing your own handlers and formatters, you can integrate LogFlow seamlessly into any environment — from simple terminal applications to complex distributed logging infrastructures.
 
-### 
+### Logflow Configuration
+
+Configuration is handled by `LogConfig` class/structure below you can see default implementation of it.
+
+```python
+class LogConfig:
+    CONSOLE_LOGGING_ENABLED = True
+    FILE_LOGGING_ENABLED = True
+    LOG_FILE_PATH = _filepath
+    LOG_DATE_TIME_FORMAT = DateTimeFormat.ISO 
+```
+
+> **Note** Logflow allowes you to manage config in runtime
+
+Here’s a professional and consistent closing section you can append at the end of your LogFlow documentation — it includes **author info**, **GitHub links**, and an **open invitation for contributions**, styled to match the rest of your Markdown file:
+
+---
+
+## Author & Contributions
+
+**Author:** [Aleko Khomasuridze](https://github.com/aleko-khomasuridze)
+**Project Repository:** [LogFlow on GitHub](https://github.com/aleko-khomasuridze/LogFlow)
+
+LogFlow is an open-source project built to provide a clean, modular, and extensible logging solution for Python developers.
+Contributions of all kinds — from bug fixes and feature suggestions to documentation improvements — are welcome and highly appreciated.
+
+If you’d like to contribute:
+
+1. Fork the repository
+2. Create a new branch for your feature or fix
+3. Commit your changes with clear messages
+4. Submit a pull request describing your update
+
+Your contributions help improve the project for everyone and keep LogFlow evolving.
+
+---
+
+> For questions, ideas, or collaboration inquiries, feel free to reach out via GitHub Issues or contact me directly.
+
+
 

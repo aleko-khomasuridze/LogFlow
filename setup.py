@@ -11,8 +11,8 @@ def parse_requirements():
     return []
 
 setup(
-    name="logflow-python",
-    version="1.0.0",
+    name="logflow_python",
+    version="1.0.2",
     packages=find_packages(),
     install_requires=parse_requirements(),
     author="Aleko Khomasuridze",

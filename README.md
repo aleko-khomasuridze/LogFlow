@@ -1,6 +1,6 @@
 # Logflow - Python
 
-[<img src="https://img.shields.io/badge/Version-1.0.0-blue">](#)
+[<img src="https://img.shields.io/badge/Version-1.0.3-blue">](#)
 [<img src="https://img.shields.io/badge/Status-Stable-brightgreen">](#)
 [<img src="https://img.shields.io/badge/Python-3.11-brightgreen">](#)
 
